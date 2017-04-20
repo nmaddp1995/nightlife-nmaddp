@@ -1,0 +1,19 @@
+<div class="header" style="margin:10px">
+<% if(!user) { %>
+<div id="home">
+    <a href="/login">
+    <button class="btn btn-primary" id="btn-login"> Sign in with Twitter </button>
+    </a>
+  
+  </div>
+  
+<% } else { %>
+    
+    <div id="sign-out" style="float: right; margin : 15px 10px;">
+        <%= user.displayName %>, <a href ="/logout" style="color:white">Sign out </a>
+    </div>
+    
+  
+    
+<% } %>
+</div>
